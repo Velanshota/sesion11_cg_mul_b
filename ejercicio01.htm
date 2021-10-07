@@ -47,7 +47,7 @@ function init() {
         r = Math.PI/2;
         arrCube.push(cubo(t, t, t, t/2, t/2, 0, 'Basic',((i==0) ? 'red':(i==1) ? 'green':(i==2) ?'blue':(i==3) ?'white':'violet'),false));
         arrCube[i].geometry.translate(0+i*t,0+i*t,0)
-        //Cambia la posicion del cubo a medida que avanza el ciclo, sumando su posicion inicial que es 0, la variable del ciclo multilpicado por las dimensiones del cubo para sobreponerse entre si.
+        //Cambia la posicion del cubo a medida que avanza el ciclo, sumando su posicion inicial que es 0, la variable del ciclo (i) multilpicado por las dimensiones del cubo(t) para sobreponerse entre si.
         //El ultimo parametro es 0 ya que los cubos no es necesario que se muevan por el eje Z
     }
 
