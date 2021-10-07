@@ -46,7 +46,7 @@ function init() {
     for (var i = 0; i < numCubos; i++) {
         d = t * 1.05;
         r = Math.PI/2;
-        arrCube.push(cubo(t, t, t, 0, 0, 0, 'Basic',((i==0) ? 'red':(i==1) ? 'green':(i==2) ?'blue':(i==3) ?'white':'violet'),false));
+        arrCube.push(cubo(t, t, t, t/2, t/2, 0, 'Basic',((i==0) ? 'red':(i==1) ? 'green':(i==2) ?'blue':(i==3) ?'white':'violet'),false));
         arrCube[i].geometry.translate(0+i*t,0+i*t,0)
         //Cambia la posicion del cubo a medida que avanza el ciclo, multiplicando por las dimensiones del cubo para no interponerlos entre si
         //arrCube[i].geometry.translate((i==0)*d,(i==1)*d,(i==2)*d)
